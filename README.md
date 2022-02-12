@@ -11,9 +11,10 @@ A continuation/culmination of DXT2 and Xevuan with a focus on making initial set
 - Home folder secured (not viewable by other users)
 
 **Improved Features**
-- Boot time
-- Disk usage action
-- Service listing
+- Boot time reduced
+- Disk usage action cleaner output
+- ISO>USB only lists USB devices
+- Service listing cleaner output
 
 **Modules**
 - Drivers: 
