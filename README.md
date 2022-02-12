@@ -17,3 +17,6 @@ brave chrome flatpak-runtimes freeoffice nodejs nodej-lts onlyoffice openoffice 
 
 - Utility: 
 active-hosts backup-os ipv4-keepalive local-rtc monitor-interface public-ip purge-old-kernels remove-unused-packages scaling-performance scaling-powersave services updatetz
+
+**Notes**
+If troubleshooting a machine you will need to disable quiet boot to see error messages. Open a terminal and run <code>sudo quietboot-off</code> and reboot.
