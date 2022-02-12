@@ -1,3 +1,5 @@
+<img width=960>https://github.com/VX-Linux/core/blob/main/auto-detection.png</img>
+
 # VX Linux
 A continuation/culmination of DXT2 and Xevuan with a focus on making initial setup as quick and simple as double-clicking a few helper scripts (/usr/share/VX/modules). This is the core version and only features an archiver, file manager, partition manager and text editor. The pro version will feature a software set decided by its users.
 
