@@ -13,7 +13,7 @@ A continuation/culmination of DXT2 and Xevuan with a focus on making initial set
 alsa-extras amd-gfx brother-printers hp-printers nvidia-latest nvidia-legacy nvidia-nouveau
 
 - Software: 
-brave chrome flatpak-runtimes freeoffice nodejs nodejs-lts onlyoffice openoffice opera steam sublime ungoogled-chromium virtualbox visual-studio-code vivaldi
+brave chrome flatpak-runtimes freeoffice nodejs nodejs-lts onlyoffice openoffice steam sublime ungoogled-chromium virtualbox visual-studio-code vivaldi
 
 - Utility: 
 active-hosts backup-os ipv4-keepalive local-rtc monitor-interface public-ip purge-old-kernels remove-unused-packages scaling-performance scaling-powersave services updatetz
