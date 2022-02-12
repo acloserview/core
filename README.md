@@ -16,6 +16,14 @@ A continuation/culmination of DXT2 and Xevuan with a focus on making initial set
 - ISO>USB only lists USB devices
 - Service listing cleaner output
 
+**Aliases**
+- alias ls='ls --color=auto'
+- alias install='sudo xbps-install -Su'
+- alias query='sudo xbps-query -Rs'
+- alias remove='sudo xbps-remove -Ro'
+- alias services='sudo /usr/share/VX/modules/utility/services'
+- alias update='sudo xbps-install -Su'
+
 **Modules**
 - Drivers: 
 alsa-extras amd-gfx brother-printers hp-printers nvidia-latest nvidia-legacy nvidia-nouveau
