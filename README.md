@@ -9,6 +9,7 @@ A continuation/culmination of DXT2 and Xevuan with a focus on making initial set
 - Disk usage of any folder
 
 **Improved Features**
+- Boot time
 - Service listing
 
 **Modules**
