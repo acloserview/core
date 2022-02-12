@@ -32,4 +32,5 @@ active-hosts backup-os ipv4-keepalive local-rtc monitor-interface public-ip purg
 - Fine-tune your system quickly with handy on/off shortcuts (defaults shown):<br><code>autologin-off</code> <code>grub-on</code> <code>osprober-off</code> <code>password-off</code> <code>quietboot-on</code> <code>ssh-off</code>
 
 **Installation**
+
 Via a slightly customised Void el cheapo installer. Open a terminal and run <code>sudo void-installer</code>
