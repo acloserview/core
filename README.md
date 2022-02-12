@@ -33,4 +33,4 @@ active-hosts backup-os ipv4-keepalive local-rtc monitor-interface public-ip purg
 
 **Installation**
 
-Via a slightly customised Void el cheapo installer. Open a terminal and run <code>sudo void-installer</code>
+Via a slightly customised Void el cheapo installer. Open a terminal and run <code>sudo vxinstaller</code>
