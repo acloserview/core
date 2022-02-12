@@ -3,7 +3,7 @@ A continuation/culmination of DXT2 and Xevuan with a focus on making initial set
 
 **New Features**
 - Automatic driver installation & configuration for Bluetooth, Intel graphics & SSD hardware
-- Hot corners (/usr/share/VX/hot-corners/hot-corners.conf)
+- Integrated hot corners (/usr/share/VX/hot-corners/hot-corners.conf)
 - Integrated screen recording (Ctrl-Alt-R to start recording and Ctrl-Alt-S to stop. Saved to home folder.)
 - Desktop notification of available updates and/or Octoxbps notifier
 - Disk usage of any folder
