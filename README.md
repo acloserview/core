@@ -7,10 +7,10 @@ A continuation/culmination of DXT2 and Xevuan with a focus on making initial set
 - Integrated screen recording (Ctrl-Alt-R to start recording and Ctrl-Alt-S to stop. Saved to home folder.)
 - Desktop notification of available updates and/or Octoxbps notifier
 - Home folder secured (not viewable by other users)
-- Disk usage of any folder
 
 **Improved Features**
 - Boot time
+- Disk usage action
 - Service listing
 
 **Modules**
