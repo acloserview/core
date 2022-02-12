@@ -26,4 +26,4 @@ active-hosts backup-os ipv4-keepalive local-rtc monitor-interface public-ip purg
 **Important Notes**
 - If troubleshooting a machine you will need to disable quiet boot to see error messages. Open a terminal and run<br><code>sudo quietboot-off</code> and reboot.
 - Sudo password is disabled. To revert to default sudo behaviour open a terminal and run<br><code>sudo password-on</code>
-- Fine-tune your system quickly with other handy on/off shortcuts (defaults shown):<br><code>autologin-off</code> <code>grub-on</code> <code>osprober-off</code> <code>password-off</code> <code>quietboot-on</code> <code>ssh-off</code>
+- Fine-tune your system quickly with handy on/off shortcuts (defaults shown):<br><code>autologin-off</code> <code>grub-on</code> <code>osprober-off</code> <code>password-off</code> <code>quietboot-on</code> <code>ssh-off</code>
