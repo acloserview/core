@@ -1,0 +1,10 @@
+[Default Applications]
+application/vnd.flatpak.ref=flatpak-installer.desktop;
+application/x-shellscript=Run as Root.desktop;
+image/jpeg=mupdf.desktop;
+image/png=mupdf.desktop;
+text/plain=mousepad.desktop;
+text/xml=mousepad.desktop;
+
+[Added Associations]
+application/x-shellscript=mousepad.desktop;

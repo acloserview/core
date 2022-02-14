@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>insert-image</icon>
+	<name>Convert to JPG</name>
+	<unique-id>1581489587647010-1</unique-id>
+	<command>convert %f -quality 90 %f.jpg `basename %f .png`.jpg</command>
+	<description></description>
+	<patterns>*.png</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>insert-image</icon>
+	<name>Convert to Image</name>
+	<unique-id>1603690457015863-1</unique-id>
+	<command>pdftoppm %f %f -png</command>
+	<description></description>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>format-list-unordered</icon>
+	<name>Disk Usage</name>
+	<unique-id>1642184726841667-1</unique-id>
+	<command>xfce4-terminal -e &apos;/usr/share/VX/actions/disk-usage %f&apos;</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>application-vnd.flatpak</icon>
+	<name>Install Flatpak</name>
+	<unique-id>1641363375999719-3</unique-id>
+	<command>xfce4-terminal -e &apos;sudo /usr/share/VX/actions/install-flatpak %f&apos;</command>
+	<description></description>
+	<patterns>*.flatpakref</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>application-x-rpm</icon>
+	<name>Install RPM</name>
+	<unique-id>1641361601561736-1</unique-id>
+	<command>xfce4-terminal -e &apos;sudo /usr/share/VX/actions/install-rpm %f&apos;</command>
+	<description></description>
+	<patterns>*.rpm</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>drive-optical</icon>
+	<name>ISO &gt; USB</name>
+	<unique-id>1641363629556421-5</unique-id>
+	<command>xfce4-terminal -e &apos;sudo /usr/share/VX/actions/iso2usb %f&apos;</command>
+	<description></description>
+	<patterns>*.iso</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>view-media-lyrics</icon>
+	<name>Normalize</name>
+	<unique-id>1642615653446051-1</unique-id>
+	<command>mp3gain -r %F</command>
+	<description></description>
+	<patterns>*.mp3</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon>akonadiconsole</icon>
+	<name>Open Terminal</name>
+	<unique-id>1619677086307084-1</unique-id>
+	<command>xfce4-terminal --working-directory=%f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+</actions>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Material-VX
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Material-VX
+IconTheme=Newaita-reborn-gray
+CursorTheme=Nordzy-cursors
+CursorSize=24

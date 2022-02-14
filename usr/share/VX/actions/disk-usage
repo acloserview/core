@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo ""
+gdu -n $1 | tail -n +1 | head -n 22
+read

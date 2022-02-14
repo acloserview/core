@@ -1,0 +1,6 @@
+#!/bin/bash
+braveinstall=$(mktemp -d)
+cd $braveinstall
+wget https://github.com/brave/brave-browser/releases/download/v1.34.80/brave-browser-1.34.80-1.x86_64.rpm
+rpm2cpio brave-browser-1.34.80-1.x86_64.rpm | cpio -idmv
+cp -r etc opt usr /

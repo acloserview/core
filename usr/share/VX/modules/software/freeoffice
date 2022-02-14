@@ -1,0 +1,7 @@
+#!/bin/bash
+
+freeofficeinstall=$(mktemp -d)
+cd $freeofficeinstall
+wget https://www.softmaker.net/down/softmaker-freeoffice-2021-1042.x86_64.rpm
+rpm2cpio softmaker-freeoffice-2021-1042.x86_64.rpm | cpio -idmv
+cp -r usr /

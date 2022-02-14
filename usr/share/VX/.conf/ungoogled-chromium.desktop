@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ungoogled Chromium
+Exec=/opt/ungoogled-chromium_95.0.4638.54-1.1_linux/chrome
+Icon=/opt/ungoogled-chromium_95.0.4638.54-1.1_linux/product_logo_48.png
+Path=/opt/ungoogled-chromium_95.0.4638.54-1.1_linux
+Terminal=false
+StartupNotify=true
+Categories=Network;

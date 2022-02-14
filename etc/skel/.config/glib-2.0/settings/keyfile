@@ -1,0 +1,66 @@
+[org/mate/engrampa/general]
+unar-open-zip=false
+encrypt-header=false
+
+[org/mate/engrampa/listing]
+show-path=false
+sort-method='name'
+sort-type='ascending'
+list-mode='as-folder'
+name-column-width=250
+
+[org/mate/engrampa/ui]
+view-toolbar=false
+window-width=550
+window-height=298
+sidebar-width=200
+
+[org/gnome/desktop/interface]
+icon-theme='Newaita-reborn-gray'
+gtk-theme='Material-VX'
+font-name='Source Sans 3 9'
+monospace-font-name='Monospace 7'
+
+[org/gnome/nm-applet]
+disable-connected-notifications=true
+disable-disconnected-notifications=true
+
+[org/mate/engrampa/dialogs/batch-add]
+default-extension='.tar.gz'
+
+[org/gtk/settings/color-chooser]
+selected-color=(true, 0.75294117647058822, 0.74901960784313726, 0.73725490196078436, 1.0)
+custom-colors=[(0.93333333333333335, 0.93333333333333335, 0.93333333333333335, 1.0), (0.12941176470588237, 0.12941176470588237, 0.12941176470588237, 0.80000000000000004), (0.129412, 0.129412, 0.129412, 0.49328899999999998), (0.12941176470588237, 0.12941176470588237, 0.12941176470588237, 0.49328859060402686), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.79530201342281881), (0.92156899999999997, 0.92156899999999997, 0.92156899999999997, 1.0), (0.92156862745098034, 0.92156862745098034, 0.92156862745098034, 1.0)]
+
+[org/gtk/settings/file-chooser]
+window-position=(575, 297)
+window-size=(853, 480)
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+
+[org/xfce/mousepad/state/application]
+
+[org/xfce/mousepad/state/window]
+width=550
+height=298
+maximized=false
+fullscreen=false
+
+[org/xfce/mousepad/preferences/view]
+word-wrap=true
+use-default-monospace-font=false
+font-name='Monospace 7'
+tab-width=4
+
+[org/xfce/mousepad/preferences/window]
+client-side-decorations=false
+opening-mode='window'
+menubar-visible=false

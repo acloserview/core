@@ -1,0 +1,9 @@
+#!/bin/bash
+
+onlyofficeinstall=$(mktemp -d)
+cd $onlyofficeinstall
+wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors.x86_64.rpm
+rpm2cpio onlyoffice-desktopeditors.x86_64.rpm | cpio -idmv
+cp -r etc opt usr /
+cd ..
+rm -r $onlyofficeinstall

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=autobluetooth
+Comment=
+Exec=sudo autobluetooth
+Icon=
+Path=
+Terminal=false
+StartupNotify=false
+NoDisplay=true
+RunHook=0
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ungoogledchromiuminstall=$(mktemp -d)
+cd $ungoogledchromiuminstall
+wget https://github.com/mdedonno1337/ungoogled-chromium-binaries/releases/download/95.0.4638.54-1.1/ungoogled-chromium_95.0.4638.54-1.1_linux.tar.xz
+tar -xf ungoogled-chromium_95.0.4638.54-1.1_linux.tar.xz
+mv ungoogled-chromium_95.0.4638.54-1.1_linux /opt
+cp /usr/share/VX/.conf/ungoogled-chromium.desktop /usr/share/applications

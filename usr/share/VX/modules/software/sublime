@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xbps-install -Syu sublime-text3
+echo "0.0.0.0 www.sublimetext.com" >> /etc/hosts

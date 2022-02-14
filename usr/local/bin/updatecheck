@@ -1,0 +1,11 @@
+#!/bin/bash
+
+updatecheck() {
+numupdates=$(xbps-install -Snu | wc -l)
+if [[ numupdates -gt 0 ]];then
+packagesaffected=$(xbps-install -Snu | awk '{print $1}')
+notify-send -t 10000 "Updates available" "$packagesaffected"
+fi
+}
+
+updatecheck & exit

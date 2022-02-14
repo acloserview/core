@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rmpinstalltmp=$(mktemp -d)
+cd $rmpinstalltmp
+
+rpm2cpio $1 | cpio -idmv
+cp -r * /
+echo ""
+
+echo "Installation complete"
+sleep 3
+exit

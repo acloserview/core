@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo ""
+sv status /var/service/* | awk '{print $2}' | cut -c 14- | sed 's/.$//'
+echo ""

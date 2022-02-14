@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=0 console=tty2 udev.log_level=0 vt.global_cursor_default==0\"/g' /etc/default/grub
+update-grub
+
+

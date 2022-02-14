@@ -1,0 +1,8 @@
+#!/bin/bash
+
+zoominstall=$(mktemp -d)
+cd $zoominstall
+wget https://zoom.us/client/latest/zoom_x86_64.rpm
+rpm2cpio zoom_x86_64.rpm | cpio -idmv
+cp -r opt usr /
+

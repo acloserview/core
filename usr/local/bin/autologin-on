@@ -1,0 +1,5 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+sed -i "s/.*autologin-user=.*/autologin-user=$_user/g" /etc/lightdm/lightdm.conf

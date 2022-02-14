@@ -1,0 +1,26 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+sleep 5
+
+intelpresent=$(lshw -numeric -C display | grep -i Intel)
+
+if [[ $intelpresent ]]; then
+xbps-install -Syu intel-media-driver intel-video-accel linux-firmware-intel mesa-intel-dri mesa-vulkan-intel vulkan-loader
+mkdir -pv /etc/X11/xorg.conf.d
+cat << EOF > /etc/X11/xorg.conf.d/20-intel.conf
+Section "Device"
+	Identifier "Intel Graphics"
+	Driver "modesetting"
+EndSection
+EOF
+rm /etc/skel/.config/autostart/autointelvga.desktop
+rm /home/$_user/.config/autostart/autointelvga.desktop
+notify-send -t 10000 "Intel graphics detected" "Intel graphics installed and configured"
+else
+rm /etc/skel/.config/autostart/autointelvga.desktop
+rm /home/$_user/.config/autostart/autointelvga.desktop
+xbps-remove -ROyo intel-media-driver intel-video-accel linux-firmware-intel mesa-intel-dri mesa-vulkan-intel vulkan-loader -y
+fi
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SSD_MOUNT_POINTS='/'
+for mount_point in 
+do
+    fstrim 
+done

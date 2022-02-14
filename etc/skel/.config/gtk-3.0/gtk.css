@@ -1,0 +1,16 @@
+#Custom
+
+VteTerminal, vte-terminal {
+    padding: 5px;
+}
+
+.tasklist button {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.xfce4-panel {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+

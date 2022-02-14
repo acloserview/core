@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=autossd
+Comment=
+Exec=sudo autossd
+Icon=
+Path=
+Terminal=false
+StartupNotify=false
+NoDisplay=true
+RunHook=0
+

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Icon=application-vnd.flatpak
+Exec=xfce4-terminal -e 'sudo flatpak install --from %f'
+Name=Flatpak Installer
+NoDisplay=true

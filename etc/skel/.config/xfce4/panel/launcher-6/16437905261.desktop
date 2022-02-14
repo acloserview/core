@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=System;Tools;
+Comment=Add or remove software installed on the system
+Exec=/usr/bin/octoxbps
+Name=OctoXBPS
+Icon=octopi
+MimeType=
+GenericName=Add/Remove Software
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-XFCE-Source=file:///usr/share/applications/octoxbps.desktop

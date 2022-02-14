@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=autointelvga
+Comment=
+Exec=sudo autointelvga
+Icon=
+Path=
+Terminal=false
+StartupNotify=false
+NoDisplay=true
+RunHook=0
+

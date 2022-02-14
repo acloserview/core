@@ -1,0 +1,22 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+sed -i "s,</actions>,,g" /home/$_user/.config/Thunar/uca.xml
+
+cat << EOF >> /home/$_user/.config/Thunar/uca.xml
+<action>
+	<icon>system-users</icon>
+	<name>Take Ownership</name>
+	<unique-id>1640516939112392-1</unique-id>
+	<command>sudo chown $_user:$_user -R %F</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
+EOF
+
+echo "Action added"
+echo ""
+sleep 3

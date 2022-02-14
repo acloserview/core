@@ -1,0 +1,13 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+xbps-install -Syu nodejs-lts
+
+mkdir /home/$_user/.npm-global
+npm config set prefix '/home/$_user/.npm-global'
+
+cat << EOF >> /home/$_user/.bash_profile
+export PATH=/home/$_user/.npm-global/bin:$PATH
+source /home/$_user/.bash_profile
+EOF

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+sleep 10
+
+installdrv=$(df -hT | grep /$ | cut -d " " -f 1)
+isdrivessd=$(lsblk $installdrv -d -o rota | tail -n1)
+
+if [[ $isdrivessd -eq 0 ]]; then
+cat << EOF > /etc/cron.daily/fstrim
+#!/bin/bash
+SSD_MOUNT_POINTS='/'
+for mount_point in 
+do
+fstrim 
+done
+EOF
+chmod +x /etc/cron.daily/fstrim
+notify-send "SSD drive detected" "Trim activated on root"
+rm /etc/skel/.config/autostart/autossd.desktop
+rm /home/$_user/.config/autostart/autossd.desktop
+else
+exit
+fi

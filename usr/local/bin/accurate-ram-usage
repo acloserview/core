@@ -1,0 +1,6 @@
+#!/bin/bash
+
+meminfo=$(free -h | grep 'Mem:')
+used=$(echo $meminfo | cut -d" " -f3 | sed 's/.$//')
+#used=$(free | grep Mem | awk '{ printf("%.f%\n", $3/$2 * 100.0) }')
+echo "$used"

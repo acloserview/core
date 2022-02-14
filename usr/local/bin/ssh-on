@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ln -s /etc/sv/sshd /var/service
+

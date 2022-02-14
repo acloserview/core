@@ -1,0 +1,14 @@
+#sudo command
+
+autologin-off
+autologin-on
+grub-off
+grub-on
+osprober-off
+osprober-on
+password-off
+password-on
+quietboot-off
+quietboot-on
+ssh-off
+ssh-on

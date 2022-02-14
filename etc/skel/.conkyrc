@@ -1,0 +1,52 @@
+conky.config = {
+
+background=true,
+update_interval=1,
+double_buffer=true,
+no_buffers=true,
+imlib_cache_size=10,
+
+draw_shades=false,
+draw_outline=false,
+draw_borders=false,
+
+gap_x=25,
+gap_y=15,
+
+alignment="top_right",
+
+minimum_height=32,
+minimum_width=32,
+
+own_window=true,
+own_window_type="desktop",
+own_window_transparent=true,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+
+own_window_argb_visual=true,
+own_window_argb_value=0,
+
+use_xft=true,
+xftalpha=1,
+font="Montserrat Light:size=20",
+text_buffer_size=256,
+override_utf10_locale=true,
+
+default_color='ABC',
+
+color0='DDD', -- clock
+color1='CCC', -- date
+
+template9=""
+
+}
+
+
+---------------------------------------------------
+---------------------------------------------------
+
+
+conky.text = [[
+${alignr}${execi 3 /usr/local/bin//accurate-ram-usage}
+\
+]]

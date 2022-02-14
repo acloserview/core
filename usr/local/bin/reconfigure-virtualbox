@@ -1,0 +1,2 @@
+#!/bin/bash
+xbps-reconfigure -f virtualbox-ose-dkms

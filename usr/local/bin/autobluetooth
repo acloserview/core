@@ -1,0 +1,27 @@
+#!/bin/bash
+
+_user="$(who|awk 'NR==1 {print $1}')"
+
+sleep 5
+
+bluetoothpresent=$(dmesg | grep -i Bluetooth)
+
+if [[ $bluetoothpresent ]]; then
+rfkill unblock bluetooth
+ln -s /etc/sv/bluetoothd /var/service
+ln -s /etc/sv/bluez-alsa /var/service
+bluetoothctl discoverable on
+bluetoothctl pairable on
+sed -i "s/NoDisplay=true/NoDisplay=false/g" /home/$_user/.local/share/applications/blueman-adapters.desktop
+sed -i "s/NoDisplay=true/NoDisplay=false/g" /home/$_user/.local/share/applications/blueman-manager.desktop
+sed -i "s/Hidden=true/Hidden-false/g" /home/$_user/.config/autostart/blueman.desktop
+rm /home/$_user/.config/autostart/autobluetooth.desktop
+notify-send -t 10000 "Bluetooth hardware found" "Bluetooth is now configured and activated"
+rm /etc/skel/.config/autostart/autobluetooth.desktop
+else
+rm /var/service/bluetoothd
+rm /var/service/bluez-alsa
+xbps-remove -ROyo blueman bluez bluez-alsa
+rm /home/$_user/.config/autostart/autobluetooth.desktop
+rm /etc/skel/.config/autostart/autobluetooth.desktop
+fi

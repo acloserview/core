@@ -1,0 +1,8 @@
+#!/bin/bash
+
+openofficeinstall=$(mktemp -d)
+cd $openofficeinstall
+wget https://liquidtelecom.dl.sourceforge.net/project/openofficeorg.mirror/4.1.11/binaries/en-GB/Apache_OpenOffice_4.1.11_Linux_x86-64_install-rpm_en-GB.tar.gz
+tar -xf Apache_OpenOffice_4.1.11_Linux_x86-64_install-rpm_en-GB.tar.gz
+/usr/share/VX/actions/install-rpm $freeofficeinstall/en-GB/RPMS/openoffice-4.1.11-9808.x86_64.rpm
+/usr/share/VX/actions/install-rpm $freeofficeinstall/en-GB/RPMS/desktop-integration/openoffice4.1.11-freedesktop-menus-4.1.11-9808.noarch.rpm
